@@ -22,8 +22,8 @@ nav{
 nav a{
     font-size: 20px;
     display:inline;
-    color: black;
-    background-color: red;
+    color: white;
+    background-color: blue;
     font-weight: bold;
     padding: 1vh;
     text-decoration: none;
@@ -84,3 +84,13 @@ h4{
     font-size: 20px;
     padding: 5px;
 }
+
+a[href="#"]{
+    background-color: green;
+}
+
+a:hover{
+    background-color:green;
+    color: white;
+}
+
