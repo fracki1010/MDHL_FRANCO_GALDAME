@@ -15,7 +15,7 @@ nav{
     background-position-x: 18vh;
     position:absolute;
     top: 6rem;
-    left: 65%;
+    left: 55%;
 
 }
 
@@ -77,7 +77,7 @@ main section{
 }
 p{
     display: block;
-    width: 100vh;
+    width: 80vh;
 }
 
 h4{
@@ -92,5 +92,71 @@ a[href="#"]{
 a:hover{
     background-color:green;
     color: white;
+}
+
+.tabla{
+    padding: 5vw;
+    margin: 10px;
+
+}
+
+th{
+    padding: 20px;
+    width: 25vw;
+}
+
+thead{
+    font-size: 22px;
+}
+
+table{
+    text-align: left ;
+}
+
+.alineacion{
+    text-align: right;
+}
+
+.pie{
+    font-size: 20px;
+    padding: 5px;
+    margin: 30px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: rgb(48, 119, 119);
+}
+
+
+.parrafo_1{
+    width: 100%;
+    height: 50px;
+    
+
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(48, 119, 119);
+}
+
+.rules{
+    padding: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.tit{
+    padding: 20px;
 }
 
