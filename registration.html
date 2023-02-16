@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Registro</h1>
+        <nav>
+            
+            <a href="#">Home</a>
+            <a href="./About MDHL.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./rules.html">Rules</a>
+            <a href="./game_info.html">Information</a>
+            
+
+        </nav>
+        <img src="./assets/images/design1_image1.jpg" class="Imagen 1" width="100px" align="left">
+        
+
+
+    </header>
+    <section>
+        <div>
+            <form action="./show_data.html" method="get">
+                <fieldset>
+                    <legend>Registro</legend>
+
+                    <label for="nombre">Player's First Name</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Juan">
+
+                    <label for="apellido">Last Name</label>
+                    <input type="text" name="apellido" id="apellido">
+
+                    <label for="direccion">Street Address</label>
+                    <input type="text" name="direccion" id="direcction">
+
+                    <label for="ciudad">City</label>
+                    <input type="text" name="ciudad" id="ciudad">
+
+                    <label for="codigo_postal">Zip Code</label>
+                    <input type="number" name="codigo_postal" id="codigo_postal">
+
+                    <label for="nacimiento">Birth Date (mm/dd/yyyy)</label>
+                    <input type="date" name="nacimiento" id="nacimiento">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="femenino">Female</label>
+                    <input type="radio" name="femenino" id="femenino">
+
+                    <label for="masculino">Male</label>
+                    <input type="radio" name="masculino" id="masculino">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Grade</legend>
+
+                    <label for="prescolar">Pre-School</label>
+                    <input type="radio" name="prescolar" id="prescolar">
+
+                    <label for="1ero">1st</label>
+                    <input type="radio" name="1ero" id="1ero">
+
+                    <label for="2do">2nd</label>
+                    <input type="radio" name="2do" id="2do">
+
+                    <label for="3ro">3rd</label>
+                    <input type="3ro" name="3ro" id="3ro">
+
+                    <label for="4to">4th</label>
+                    <input type="4to" name="4to" id="4to">
+
+                    <label for="5to">5th</label>
+                    <input type="5to" name="5to" id="5to">
+
+                </fieldset>
+
+                
+                <h3><strong>Which elementary school do you live near</strong></h3>
+
+                <fieldset>
+                    <legend>Clesest School</legend>
+                    <label><input type="radio"  name="lugar_1" id="lugar_1">AJ Katzenmaier</label>
+                    <label><input type="radio"  name="lugar_2" id="lugar_2">Marjorie P Hart</label>
+                    <label><input type="radio"  name="lugar_3" id="lugar_3">Greenbay</label>
+                    <label><input type="radio"  name="lugar_4" id="lugar_4">North Elementary</label>
+                    <label><input type="radio"  name="lugar_5" id="lugar_5">Howard A Yeager</label>
+                    <label><input type="radio"  name="lugar_6" id="lugar_6">South Elementary</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What position(s) do you normally play? (check all that apply)</legend>
+                    <label><input type="forward" name="forward" id="forward">Forward</label>
+                    <label><input type="midfield" name="midfield" id="midfield">Midfield</label>
+                    <label><input type="defense" name="defense" id="defense">Defense</label>
+                    <label><input type="goalkeeper" name="goalkeeper" id="goalkeeper">Goalkeeper</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Uniform Size</legend>
+                    <label><input type="radio" name="smal" id="smal">Youth Smal</label>
+                    <label><input type="radio" name="medium" id="medium">Medium</label>                    
+                    <label><input type="radio" name="Ymedium" id="Yedium">Youth Medium</label>
+                    <label><input type="radio" name="large" id="large">Large</label>
+                    <label><input type="radio" name="Ylarge" id="Ylarge">Youth Large</label>
+                    <label><input type="radio" name="Ysmall" id="small">Small</label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Permission to Play</legend>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs an activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their empliyees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation</p>
+                    <p>By signing below, I herebyagree andauthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                    </p>
+                    <label for="terminos">Accept the terms and conditions:</label>
+                    <input type="radio" name="terminos" id="terminos">
+
+                </fieldset>
+
+                <input type="submit" name="envio" id="envio">
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>

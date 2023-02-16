@@ -11,9 +11,7 @@ h1{
 
 nav{ 
     font-family: Georgia, serif;
-    display: inline-block;
-    background-position-x: 18vh;
-    position:absolute;
+    display: flex
     top: 6rem;
     left: 55%;
 
@@ -29,6 +27,7 @@ nav a{
     text-decoration: none;
     margin: 10px;
     box-shadow: 3px 4px black;
+
 }
 
 header{
