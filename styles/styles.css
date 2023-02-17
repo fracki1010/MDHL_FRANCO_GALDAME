@@ -1,6 +1,8 @@
 *{
     background-color: rgb(185, 185, 185);
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1{
@@ -11,17 +13,19 @@ h1{
 
 nav{ 
     font-family: Georgia, serif;
-    display: flex
-    top: 6rem;
-    left: 55%;
-
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    top: 4vh;
 }
 
-nav a{
+nav a, #registro{
     font-size: 20px;
     display:inline;
     color: white;
-    background-color: blue;
+    background-color: rgb(22, 22, 36);
     font-weight: bold;
     padding: 1vh;
     text-decoration: none;
@@ -100,12 +104,13 @@ a:hover{
 }
 
 th{
-    padding: 20px;
+    padding: 15px;
     width: 25vw;
 }
 
 thead{
-    font-size: 22px;
+    font-size: 15px;
+    text-align: center;
 }
 
 table{
@@ -138,8 +143,6 @@ footer{
 .parrafo_1{
     width: 100%;
     height: 50px;
-    
-
 }
 
 footer p{
@@ -147,6 +150,12 @@ footer p{
     align-items: center;
     justify-content: center;
     background-color: rgb(48, 119, 119);
+}
+
+.place, iframe{
+    padding: 0;
+    width: 35vw;
+    height: 35vh;
 }
 
 .rules{
@@ -159,3 +168,128 @@ footer p{
     padding: 20px;
 }
 
+
+
+
+#tit_registro{
+    font-size: 6vh;
+    margin-top: 13vh;
+    margin-bottom: 3vh;
+    margin-left: 4vw;
+}
+
+fieldset{
+
+    padding: 2vw;
+    margin: 2vw;
+    background-color: rgb(252, 52, 52);
+
+}
+
+
+.gender input, .grade input, .posicion input, .uniform input, .clesest_school input{
+    margin-left: 0px;
+    margin-right: 3px;
+}
+
+.clesest_school, .posicion, .uniform{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 15vh;
+}
+
+fieldset p{
+    width: 100%;
+}
+
+.uniform label, .clesest_school label, .posicion label{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+#formulario2{
+    padding: 2vw;
+    margin-top: 9vh;
+    font-size: 25px;
+}
+
+#imagen_registro{
+    height: 20vh;
+}
+
+#logo_registro{
+    height: 30vh;
+    width: 97vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#imagen_logo{
+    width: 200px;
+    height: 200px;
+    
+}
+
+#header_registro{
+    height: 300px;
+}
+
+legend, label, fieldset p{
+    background-color: transparent;
+}
+
+legend{
+    font-size: 23px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+#registro2{
+    width: 60px;
+    height:60px;
+    border-radius:4vh ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 187, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#envio{
+    width: 80px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: rgb(22, 22, 36);
+    color: white;
+    font-family: impact;
+}
+
+#registro{
+    background-color: transparent;
+}
+
+#contenedor_envio{
+    padding-left: 7vw;
+    padding-top: 3vh;
+}
+
+#envio:hover{
+    background-color:green;
+    color: white;
+}
