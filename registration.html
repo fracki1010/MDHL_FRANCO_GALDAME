@@ -7,15 +7,14 @@
     <title>Formulario de Registro</title>
     <link rel="stylesheet" href="./styles/styles.css">
 
-    
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
     <header id="header_registro">
         
         <nav>
             
-            <a href="#">Home</a>
+            <a href="./index.html">Home</a>
             <a href="./About MDHL.html">About</a>
             <a href="./contact.html">Contact</a>
             <a href="./rules.html">Rules</a>
@@ -37,90 +36,160 @@
     <section>
         <div id="registro">
             <form action="./show_data.html" method="get">
-                <fieldset class="datos_personales">
+
+                <fieldset class="row g-3">
                     <legend>Personal Date</legend>
 
-                    <label for="nombre">Player's First Name</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Michael">
+                    <div class="col-md-4">
+                        <label for="nombre" class="form-label">Player's First Name</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="apellido" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="apellido" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="direccion" class="form-label">Street Address</label>
+                        <div class="input-group has-validation">
+                          <input type="text" class="form-control" id="direccion" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="ciudad" class="form-label">City</label>
+                        <input type="text" class="form-control" id="ciudad" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="codigo_postal" class="form-label">Zip Code</label>
+                        <input class="form-control" id="codigo_postal" required>
+                        
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="fecha_de_nacimiento" class="form-label">Birth Date (dd/mm/yyyy)</label>
+                        <input type="text" class="form-control" id="fecha_de_nacimiento" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid zip.
+                        </div>
+                      </div>
 
-                    <label for="apellido">Last Name</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Jordan">
-
-                    <label for="direccion">Street Address</label>
-                    <input type="text" name="direccion" id="direcction">
-
-                    <label for="ciudad">City</label>
-                    <input type="text" name="ciudad" id="ciudad">
-
-                    <label for="codigo_postal">Zip Code</label>
-                    <input type="number" name="codigo_postal" id="codigo_postal">
-
-                    <label for="fecha_de_nacimiento">Birth Date (mm/dd/yyyy)</label>
-                    <input type="text" name="fecha_de_nacimiento" id="nacimiento">
                 </fieldset>
 
-                <fieldset class="gender">
+
+                <fieldset>
                     <legend>Gender</legend>
-                    <label for="femenino">Female</label>
-                    <input type="radio" name="gender" id="femenino" value="female">
+                    
+                    <input class="btn-check" type="radio" name="gender" id="femenino" value="female" checked>
+                    <label class="btn btn-outline-success" for="femenino">Female</label>
 
-                    <label for="masculino">Male</label>
-                    <input type="radio" name="gender" id="masculino" value="male">
+                    <input class="btn-check" type="radio" name="gender" id="masculino" value="male">
+                    <label class="btn btn-outline-success" for="masculino">Male</label>
                 </fieldset>
 
-                <fieldset class="grade">
+
+                <fieldset>
                     <legend>Grade</legend>
 
-                    <label for="prescolar">Pre-School</label>
-                    <input type="radio" name="grade" id="prescolar" value="Pre-School">
 
-                    <label for="1ero">1st</label>
-                    <input type="radio" name="grade" id="1ero" value="1st">
+                        <input class="btn-check" type="radio" name="grade" id="prescolar" value="Pre-School" checked>
+                        <label class="btn btn-outline-success"  for="prescolar">Pre-School</label>
 
-                    <label for="2do">2nd</label>
-                    <input type="radio" name="grade" id="2do" value="2nd">
+                        <input class="btn-check" type="radio" name="grade" id="1ero" value="1st">  
+                        <label class="btn btn-outline-success" for="1ero">1st</label>   
 
-                    <label for="3ro">3rd</label>
-                    <input type="radio" name="grade" id="3ro" value="3rd">
+                        <input class="btn-check" type="radio" name="grade" id="2do" value="2nd">
+                        <label class="btn btn-outline-success"  for="2do">2nd</label>    
 
-                    <label for="5to">4th</label>
-                    <input type="radio" name="grade" id="4to" value="4th">
+                        <input class="btn-check"type="radio" name="grade" id="3ro" value="3rd"> 
+                        <label class="btn btn-outline-success" for="3ro" >3rd</label>   
 
-                    <label for="5to">5th</label>
-                    <input type="radio" name="grade" id="5to" value="5th">
+                        <input class="btn-check" type="radio" name="grade" id="4to" value="4th">
+                        <label class="btn btn-outline-success" for="5to" >4th</label>    
+        
+                        <input class="btn-check" type="radio" name="grade" id="5to" value="5th">
+                        <label class="btn btn-outline-success" for="5to" >5th</label>    
 
                 </fieldset>
 
                 
                 <h3 id="formulario2"><strong>Which elementary school do you live near</strong></h3>
 
-                <fieldset class="clesest_school">
+                <fieldset>
                     <legend>Clesest School</legend>
-                    <label><input type="radio"  name="establecimiento" id="lugar_1" value="AJ Katzenmaier">AJ Katzenmaier</label>
-                    <label><input type="radio"  name="establecimiento" id="lugar_2" value="Marjorie P Hart">Marjorie P Hart</label>
-                    <label><input type="radio"  name="establecimiento" id="lugar_3" value="Greenbay">Greenbay</label>
-                    <label><input type="radio"  name="establecimiento" id="lugar_4" value="North Elementary">North Elementary</label>
-                    <label><input type="radio"  name="establecimiento" id="lugar_5" value="Howard A yeager">Howard A Yeager</label>
-                    <label><input type="radio"  name="establecimiento" id="lugar_6" value="South Elementary">South Elementary</label>
+
+                    
+                    <input class="btn-check" type="radio"  name="establecimiento" id="lugar_1" autocomplete="off" value="AJ Katzenmaier" checked>
+                    <label class="btn btn-outline-success" for="lugar_1">AJ Katzenmaier</label>
+                    
+                    <input class="btn-check" type="radio"  name="establecimiento" id="lugar_2" autocomplete="off" value="Marjorie P Hart">
+                    <label class="btn btn-outline-success" for="lugar_2">Marjorie P Hart</label>
+                    
+                    <input class="btn-check" type="radio"  name="establecimiento" id="lugar_3" autocomplete="off" value="Greenbay">
+                    <label class="btn btn-outline-success" for="lugar_3">Greenbay</label>
+                    
+                    <input class="btn-check" type="radio"  name="establecimiento" id="lugar_4" autocomplete="off" value="North Elementary">
+                    <label class="btn btn-outline-success" for="lugar_4">North Elementary</label>
+                    
+                    <input class="btn-check" type="radio"  name="establecimiento" id="lugar_5" autocomplete="off" value="Howard A yeager">
+                    <label class="btn btn-outline-success" for="lugar_5">Howard A Yeager</label>
+        
+                    <input class="btn-check" type="radio"  name="establecimiento" id="lugar_6" autocomplete="off" value="South Elementary">
+                    <label class="btn btn-outline-success" for="lugar_6">South Elementary</label>
+
                 </fieldset>
 
-                <fieldset class="posicion">
+                <fieldset>
                     <legend>What position(s) do you normally play? (check all that apply)</legend>
-                    <label><input type="checkbox" name="Position" id="forward" value="Forward">Forward</label>
-                    <label><input type="checkbox" name="Position" id="midfield" value="Midfield">Midfield</label>
-                    <label><input type="checkbox" name="Position" id="defense" value="Defense">Defense</label>
-                    <label><input type="checkbox" name="Position" id="goalkeeper" value="Goalkeeper">Goalkeeper</label>
+
+                    <input class="btn-check" type="checkbox" name="Position" id="forward" value="Forward" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="forward">Forward</label>
+
+                    
+                    <input class="btn-check" type="checkbox" name="Position" id="midfield" value="Midfield" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="midfield">Midfield</label>
+                    
+                    <input class="btn-check" type="checkbox" name="Position" id="defense" value="Defense" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="defense">Defense</label>
+                
+                    <input class="btn-check" type="checkbox" name="Position" id="goalkeeper" value="Goalkeeper" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="goalkeeper">Goalkeeper</label>
 
                 </fieldset>
 
-                <fieldset class="uniform">
+                <fieldset>
                     <legend>Uniform Size</legend>
-                    <label><input type="radio" name="uniforme" id="smal" value="Youth Smal">Youth Smal</label>
-                    <label><input type="radio" name="uniforme" id="medium" value="Medium">Medium</label>                    
-                    <label><input type="radio" name="uniforme" id="Yedium" value="Youth Medium">Youth Medium</label>
-                    <label><input type="radio" name="uniforme" id="large" value="Large">Large</label>
-                    <label><input type="radio" name="uniforme" id="Ylarge" value="Youth Large">Youth Large</label>
-                    <label><input type="radio" name="uniforme" id="small" value="Small">Small</label>
+
+                    <input class="btn-check"  type="radio" name="uniforme" id="smal" value="Youth Smal" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="smal">Youth Smal</label>
+
+                    <input class="btn-check"  type="radio" name="uniforme" id="medium" value="Medium" autocomplete="off">  
+                    <label class="btn btn-outline-primary" for="medium">Medium</label>                
+                    
+                    <input class="btn-check"  type="radio" name="uniforme" id="Ymedium" value="Youth Medium" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="Ymedium">Youth Medium</label>
+                    
+                    <input class="btn-check"  type="radio" name="uniforme" id="large" value="Large" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="large">Large</label>
+                    
+                    <input class="btn-check"  type="radio" name="uniforme" id="Ylarge" value="Youth Large" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="Ylarge">Youth Large</label>
+                    
+                    <input class="btn-check"  type="radio" name="uniforme" id="small" value="Small" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="small">Small</label>
+                    
 
                 </fieldset>
 
@@ -130,20 +199,30 @@
                     <p>By signing below, I herebyagree andauthorizethe above. In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p>
                     </p>
                     <br>
-                    <label for="tutor">By entering your name below</label>
-                    <input type="text" name="tutor" id="tutor">
 
-                    <label for="fecha"><input type="date">Date</label>
+                    <div class="row g-6">
+                        <div class="col-md-4">
+                            <label for="tutor">By entering your name below</label>
+                            <input class="form-control" type="text" name="tutor" id="tutor">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="fecha">Date</label>
+                            <input class="form-control" id="fecha" type="date">
+                        </div>
+                    </div>
+                        
+                    
+
+                   
 
                 </fieldset>
-                <div id="contenedor_envio">
-                    <input type="submit" name="envio" id="envio">
-                </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
 
             </form>
         </div>
     </section>
     
-    
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body> 
 </html>

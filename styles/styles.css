@@ -187,7 +187,7 @@ fieldset{
 }
 
 
-.gender input, .grade input, .posicion input, .uniform input, .clesest_school input{
+.grade input, .posicion input, .uniform input, .clesest_school input{
     margin-left: 0px;
     margin-right: 3px;
 }
@@ -226,7 +226,13 @@ fieldset p{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    background-color: black;
+}
+
+h1.registro{
+    color: white;
+    background-color: transparent;
 }
 
 #imagen_logo{
@@ -258,17 +264,43 @@ legend{
     margin-top: 5px;
 }
 #registro2{
-    width: 60px;
-    height:60px;
+    width: 130px;
+    height:45px;
+    color: white;
     border-radius:4vh ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: rgb(255, 187, 0);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#registro2:hover{
+    background-color:green;
+    color: white;
+}
+
+.home2{
+    background-color: black;
+    border-radius: 10px;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registro3{
+    border-radius: 10px;
+    width: 100px;
+    height: 85px;
+    margin-right: 8px;
 }
 
 #envio{
@@ -284,12 +316,12 @@ legend{
     background-color: transparent;
 }
 
-#contenedor_envio{
-    padding-left: 7vw;
-    padding-top: 3vh;
-}
 
 #envio:hover{
     background-color:green;
     color: white;
+}
+
+#titulo3{
+    width: 70%;
 }
