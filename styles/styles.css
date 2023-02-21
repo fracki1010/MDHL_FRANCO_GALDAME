@@ -1,6 +1,8 @@
 *{
     background-color: rgb(185, 185, 185);
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1{
@@ -11,24 +13,25 @@ h1{
 
 nav{ 
     font-family: Georgia, serif;
-    display: inline-block;
-    background-position-x: 18vh;
-    position:absolute;
-    top: 6rem;
-    left: 65%;
-
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    top: 4vh;
 }
 
-nav a{
+nav a, #registro{
     font-size: 20px;
     display:inline;
     color: white;
-    background-color: blue;
+    background-color: rgb(22, 22, 36);
     font-weight: bold;
     padding: 1vh;
     text-decoration: none;
     margin: 10px;
     box-shadow: 3px 4px black;
+
 }
 
 header{
@@ -77,7 +80,7 @@ main section{
 }
 p{
     display: block;
-    width: 100vh;
+    width: 80vh;
 }
 
 h4{
@@ -94,3 +97,231 @@ a:hover{
     color: white;
 }
 
+.tabla{
+    padding: 5vw;
+    margin: 10px;
+
+}
+
+th{
+    padding: 15px;
+    width: 25vw;
+}
+
+thead{
+    font-size: 15px;
+    text-align: center;
+}
+
+table{
+    text-align: left ;
+}
+
+.alineacion{
+    text-align: right;
+}
+
+.pie{
+    font-size: 20px;
+    padding: 5px;
+    margin: 30px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    background-color: rgb(48, 119, 119);
+}
+
+
+.parrafo_1{
+    width: 100%;
+    height: 50px;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(48, 119, 119);
+}
+
+.place, iframe{
+    padding: 0;
+    width: 35vw;
+    height: 35vh;
+}
+
+.rules{
+    padding: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.tit{
+    padding: 20px;
+}
+
+
+
+
+#tit_registro{
+    font-size: 6vh;
+    margin-top: 13vh;
+    margin-bottom: 3vh;
+    margin-left: 4vw;
+}
+
+fieldset{
+
+    padding: 2vw;
+    margin: 2vw;
+    background-color: rgb(252, 52, 52);
+
+}
+
+
+.grade input, .posicion input, .uniform input, .clesest_school input{
+    margin-left: 0px;
+    margin-right: 3px;
+}
+
+.clesest_school, .posicion, .uniform{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 15vh;
+}
+
+fieldset p{
+    width: 100%;
+}
+
+.uniform label, .clesest_school label, .posicion label{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+#formulario2{
+    padding: 2vw;
+    margin-top: 9vh;
+    font-size: 25px;
+}
+
+#imagen_registro{
+    height: 20vh;
+}
+
+#logo_registro{
+    height: 30vh;
+    width: 97vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+h1.registro{
+    color: white;
+    background-color: transparent;
+}
+
+#imagen_logo{
+    width: 200px;
+    height: 200px;
+    
+}
+
+#header_registro{
+    height: 300px;
+}
+
+legend, label, fieldset p{
+    background-color: transparent;
+}
+
+legend{
+    font-size: 23px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 6px;
+    margin-top: 5px;
+}
+#registro2{
+    width: 130px;
+    height:45px;
+    color: white;
+    border-radius:4vh ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 187, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 23px;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#registro2:hover{
+    background-color:green;
+    color: white;
+}
+
+.home2{
+    background-color: black;
+    border-radius: 10px;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registro3{
+    border-radius: 10px;
+    width: 100px;
+    height: 85px;
+    margin-right: 8px;
+}
+
+#envio{
+    width: 80px;
+    height: 40px;
+    border-radius: 20%;
+    background-color: rgb(22, 22, 36);
+    color: white;
+    font-family: impact;
+}
+
+#registro{
+    background-color: transparent;
+}
+
+
+#envio:hover{
+    background-color:green;
+    color: white;
+}
+
+#titulo3{
+    width: 70%;
+}
